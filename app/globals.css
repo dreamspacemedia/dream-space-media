@@ -126,3 +126,76 @@ body {
     transform: translate3d(-100%,0,0);
   }
 }
+
+
+/* ===== FINAL CINEMATIC MARQUEE FIX ===== */
+
+.cinematic-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.cinematic-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: cinematicScroll 38s linear infinite;
+  will-change: transform;
+}
+
+.cinematic-marquee:hover .cinematic-track {
+  animation-play-state: paused;
+}
+
+.cinematic-logo-card {
+  width: 260px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 50px rgba(255,255,255,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.35);
+
+  transition:
+    transform 500ms cubic-bezier(0.22,1,0.36,1),
+    box-shadow 500ms ease,
+    background 500ms ease;
+}
+
+.cinematic-logo-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  background: rgba(255,255,255,1);
+
+  box-shadow:
+    0 25px 80px rgba(255,255,255,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+@keyframes cinematicScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 16px));
+  }
+}

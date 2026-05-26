@@ -170,30 +170,12 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="ultra-marquee">
-          <div className="ultra-marquee-track">
+        <div className="cinematic-marquee">
+          <div className="cinematic-track">
             {[...clients, ...clients].map((client, index) => (
               <div
-                key={`track-a-${index}`}
-                className="logo-card"
-              >
-                <Image
-                  src={client.image}
-                  alt={client.name}
-                  width={190}
-                  height={100}
-                  className="object-contain max-h-[100px] w-auto select-none pointer-events-none"
-                  draggable={false}
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="ultra-marquee-track ultra-marquee-track-2">
-            {[...clients, ...clients].map((client, index) => (
-              <div
-                key={`track-b-${index}`}
-                className="logo-card"
+                key={index}
+                className="cinematic-logo-card"
               >
                 <Image
                   src={client.image}
