@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'PT Dream Space Media',
-  description: 'Production House & Creative Agency',
+  description: 'Cinematic Production House & Creative Agency',
 }
 
 export default function RootLayout({ children }) {
