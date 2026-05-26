@@ -16,15 +16,21 @@ const clients = [
 const services = [
   {
     title: "Commercial Ads",
-    desc: "Luxury cinematic commercial production for modern brands."
+    desc: "Luxury cinematic commercial production for modern brands.",
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop",
   },
   {
     title: "Social Media Campaigns",
-    desc: "Creative social-first campaigns engineered for digital impact."
+    desc: "Creative social-first campaigns engineered for digital impact.",
+    image:
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1400&auto=format&fit=crop",
   },
   {
     title: "Production House",
-    desc: "Full-service production support for premium visual storytelling."
+    desc: "Full-service production support for premium visual storytelling.",
+    image:
+      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1400&auto=format&fit=crop",
   }
 ];
 
@@ -117,23 +123,34 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-2xl p-10 hover:-translate-y-3 transition duration-700"
+                className="group relative overflow-hidden rounded-[36px] border border-white/10 min-h-[520px] hover:-translate-y-3 transition duration-700"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-white/10 to-transparent" />
+                <div
+                  className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-110 transition duration-[1800ms]"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                />
 
-                <div className="relative z-10">
-                  <div className="w-20 h-20 rounded-3xl bg-white/10 border border-white/10 mb-10 flex items-center justify-center text-2xl">
-                    ✦
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
 
-                  <h3 className="text-3xl font-bold mb-6">
-                    {service.title}
-                  </h3>
+                <div className="absolute inset-0 bg-white/[0.03] backdrop-blur-[2px]" />
 
-                  <p className="text-neutral-300 leading-relaxed text-lg">
-                    {service.desc}
-                  </p>
+                <div className="absolute top-6 left-6 w-16 h-16 rounded-3xl border border-white/15 bg-white/10 backdrop-blur-xl flex items-center justify-center text-2xl">
+                  ✦
                 </div>
+
+                <div className="relative z-10 h-full p-10 flex flex-col justify-end">
+                  <div className="translate-y-6 group-hover:translate-y-0 transition duration-700">
+                    <h3 className="text-4xl font-black mb-6 tracking-[-0.03em]">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-neutral-200 leading-relaxed text-lg opacity-90 group-hover:opacity-100 transition">
+                      {service.desc}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="absolute inset-0 rounded-[36px] ring-1 ring-white/10 group-hover:ring-white/20 transition duration-700" />
               </div>
             ))}
           </div>
@@ -153,19 +170,38 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="relative">
-          <div className="flex gap-8 animate-marquee whitespace-nowrap px-6">
+        <div className="ultra-marquee">
+          <div className="ultra-marquee-track">
             {[...clients, ...clients].map((client, index) => (
               <div
-                key={index}
-                className="min-w-[240px] h-[150px] rounded-[30px] border border-white/10 bg-white/90 backdrop-blur-xl flex items-center justify-center shadow-2xl hover:scale-105 transition duration-500"
+                key={`track-a-${index}`}
+                className="logo-card"
               >
                 <Image
                   src={client.image}
                   alt={client.name}
-                  width={180}
-                  height={90}
-                  className="object-contain max-h-[90px] w-auto"
+                  width={190}
+                  height={100}
+                  className="object-contain max-h-[100px] w-auto select-none pointer-events-none"
+                  draggable={false}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="ultra-marquee-track ultra-marquee-track-2">
+            {[...clients, ...clients].map((client, index) => (
+              <div
+                key={`track-b-${index}`}
+                className="logo-card"
+              >
+                <Image
+                  src={client.image}
+                  alt={client.name}
+                  width={190}
+                  height={100}
+                  className="object-contain max-h-[100px] w-auto select-none pointer-events-none"
+                  draggable={false}
                 />
               </div>
             ))}
