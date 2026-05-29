@@ -229,7 +229,7 @@ export default function Home() {
             <div className="space-y-5 text-lg text-neutral-300">
               <p>+62 8131 1803 435</p>
               <p>dreamspacemedia08@gmail.com</p>
-              <p>@dreamspacemedia</p>
+              <p></p>
             </div>
 
             <a
