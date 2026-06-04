@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="relative z-10">
             <div className="inline-flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-5 py-3 mb-10">
-  <div className="bg-white rounded-xl p-2 ring-1 ring-white/20 shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.25)] border border-white/30">
     <Image
       src="/logo/dream-space-logo.png"
       alt="Dream Space Media"
