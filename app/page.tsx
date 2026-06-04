@@ -1,17 +1,19 @@
-import Image from 'next/image';
 import Image from "next/image";
 
 const clients = [
-  { name: "Focallure", image: "/clients/focallure.png" },
-  { name: "Hexze", image: "/clients/hexze.png" },
-  { name: "Hyundai", image: "/clients/hyundai.png" },
-  { name: "Mistine", image: "/clients/mistine.png" },
-  { name: "Oppo", image: "/clients/oppo.png" },
-  { name: "Roborock", image: "/clients/roborock.png" },
-  { name: "Tiktok", image: "/clients/tiktok.png" },
-  { name: "Urbanx", image: "/clients/urbanx.png" },
-  { name: "Usmile", image: "/clients/usmile.png" },
-  { name: "Xiaomi", image: "/clients/xiaomi.png" },
+  { name: "Oppo", image: "/brands/brand logo/oppo.png" },
+  { name: "Hyundai", image: "/brands/brand logo/hyundai.png" },
+  { name: "Xiaomi", image: "/brands/brand logo/xiaomi.png" },
+  { name: "Tiktok", image: "/brands/brand logo/tiktok.png" },
+  { name: "Roborock", image: "/brands/brand logo/roborock.png" },
+  { name: "Focallure", image: "/brands/brand logo/focallure.png" },
+  { name: "Usmile", image: "/brands/brand logo/usmile.png" },
+  { name: "Mistine", image: "/brands/brand logo/mistine.png" },
+  { name: "Hexze", image: "/brands/brand logo/hexze.png" },
+  { name: "Urbanx", image: "/brands/brand logo/urbanx.png" },
+  { name: "Cuktech", image: "/brands/brand logo/cuktech.png" },
+  { name: "Sebo", image: "/brands/brand logo/sebo.png" },
+  { name: "Tuttoo", image: "/brands/brand logo/tuttoo.png" },
 ];
 
 const services = [
