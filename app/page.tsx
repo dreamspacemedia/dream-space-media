@@ -50,14 +50,17 @@ export default function Home() {
 
           <div className="relative z-10">
             <div className="inline-flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-5 py-3 mb-10">
-  <Image
-    src="/logo/dream-space-logo.png"
-    alt="Dream Space Media"
-    width={36}
-    height={36}
-    className="object-contain"
-    priority
-  />
+  <div className="bg-white rounded-xl p-2 ring-1 ring-white/20 shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+    <Image
+      src="/logo/dream-space-logo.png"
+      alt="Dream Space Media"
+      width={38}
+      height={38}
+      className="object-contain"
+      priority
+    />
+  </div>
+
   <span className="uppercase tracking-[0.35em] text-sm text-neutral-300">
     PT Dream Space Media
   </span>
