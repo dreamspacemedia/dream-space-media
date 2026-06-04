@@ -49,12 +49,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center w-full">
 
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-3 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-6 py-3 mb-10">
-              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="uppercase tracking-[0.35em] text-sm text-neutral-300">
-                PT Dream Space Media
-              </span>
-            </div>
+            <div className="inline-flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-5 py-3 mb-10">
+  <Image
+    src="/logo/dream-space-logo.png"
+    alt="Dream Space Media"
+    width={36}
+    height={36}
+    className="object-contain"
+    priority
+  />
+  <span className="uppercase tracking-[0.35em] text-sm text-neutral-300">
+    PT Dream Space Media
+  </span>
+</div>
 
             <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-[-0.04em] mb-8">
               Cinematic
@@ -71,7 +78,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-5">
               <a
-                href="https://wa.me/6281311803435"
+                href="https://wa.me/628131803435"
                 className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-500 shadow-2xl"
               >
                 Start a Project
@@ -230,7 +237,7 @@ export default function Home() {
             </h3>
 
             <div className="space-y-5 text-lg text-neutral-300">
-              <p>+62 8131 1803 435</p>
+              <p>+62 8131 8034 35</p>
               <p>dreamspacemedia08@gmail.com</p>
               <p></p>
             </div>
