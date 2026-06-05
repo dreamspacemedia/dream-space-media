@@ -49,8 +49,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center w-full">
 
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-5 py-3 mb-10">
-  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.25)] border border-white/30">
+            <div className="flex items-center gap-5 mb-12">
+  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.18)]">
     <Image
       src="/logo/dream-space-logo.png"
       alt="Dream Space Media"
@@ -61,9 +61,15 @@ export default function Home() {
     />
   </div>
 
-  <span className="uppercase tracking-[0.35em] text-sm text-neutral-300">
-    PT Dream Space Media
-  </span>
+  <div>
+    <p className="uppercase tracking-[0.5em] text-xs text-neutral-400 mb-1">
+      Production House & Creative Agency
+    </p>
+
+    <h3 className="text-2xl font-semibold tracking-[0.18em] text-white">
+      PT DREAM SPACE MEDIA
+    </h3>
+  </div>
 </div>
 
             <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-[-0.04em] mb-8">
