@@ -50,12 +50,12 @@ export default function Home() {
 
           <div className="relative z-10">
             <div className="flex items-center gap-5 mb-12">
-  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.18)]">
+  <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.18)]">
     <Image
       src="/logo/dream-space-logo.png"
       alt="Dream Space Media"
-      width={38}
-      height={38}
+      width={72}
+      height={72}
       className="object-contain"
       priority
     />
