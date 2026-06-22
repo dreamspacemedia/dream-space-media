@@ -267,11 +267,12 @@ export default function Home() {
     rel="noopener noreferrer"
     className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
   >
-    Careers at Dream Space →
+    Careers
   </a>
 
   <a
     href="mailto:dreamspacemedia08@gmail.com"
+    text="align center"
     className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
   >
     Email Us
