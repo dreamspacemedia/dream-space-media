@@ -256,7 +256,7 @@ export default function Home() {
     href="https://wa.me/628131803435"
     target="_blank"
     rel="noopener noreferrer"
-    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-neutral-200 transition-all duration-300"
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
   >
     Contact via WhatsApp
   </a>
