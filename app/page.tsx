@@ -272,17 +272,12 @@ export default function Home() {
 
   <a
     href="mailto:dreamspacemedia08@gmail.com"
-    text="align center"
     className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
   >
     Email Us
   </a>
 </div>
 
-<p className="mt-6 text-sm text-neutral-500 max-w-md leading-relaxed">
-  Interested in joining our team? Explore current openings,
-  internships, and freelance opportunities at Dream Space Media.
-</p>
           </div>
         </div>
       </section>
