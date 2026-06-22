@@ -242,7 +242,7 @@ export default function Home() {
             <h3 className="text-5xl font-black leading-tight mb-10">
               Let’s Create
               <br />
-              Something Cinematic
+              Something Extraordinary
             </h3>
 
             <div className="space-y-5 text-lg text-neutral-300">
@@ -251,12 +251,38 @@ export default function Home() {
               <p></p>
             </div>
 
-            <a
-              href="https://wa.me/6281311803435"
-              className="inline-flex mt-12 bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-500"
-            >
-              Contact via WhatsApp
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+  <a
+    href="https://wa.me/628131803435"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-neutral-200 transition-all duration-300"
+  >
+    Contact via WhatsApp
+  </a>
+
+  <a
+    href="https://glints.com/id/companies/dream-space-media/8f105743-fdbb-4704-81d5-bb34a83db4c2"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
+  >
+    Careers at Dream Space →
+  </a>
+   
+              <a
+    href="mailto:dreamspacemedia08@gmail.com"
+    className="text-neutral-400 hover:text-white transition"
+  >
+    Email Us
+  </a>
+</div>
+</div>
+
+<p className="mt-6 text-sm text-neutral-500 max-w-md leading-relaxed">
+  Interested in joining our team? Explore current openings,
+  internships, and freelance opportunities at Dream Space Media.
+</p>
           </div>
         </div>
       </section>
