@@ -226,10 +226,10 @@ export default function Home() {
               </h3>
 
               <p className="text-neutral-200 text-lg leading-relaxed">
-                NEO SOHO APARTEMENT NOMOR 3503,
-                Jl. Letjen S. Parman No.Kav. 28,
-                RT.3/RW.5, Tj. Duren Sel.,
-                Kec. Grogol Petamburan.
+                MR SANYES OFFICE
+                Mall Taman Palem Lantai P8
+                RT.13/RW.10, Kelurahan Cengkareng Timur, 
+                Kecamatan Cengkareng, Kota Jakarta Barat
               </p>
             </div>
           </div>
