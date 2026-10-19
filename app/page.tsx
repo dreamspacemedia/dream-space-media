@@ -30,11 +30,11 @@ const services = [
       "https://images.unsplash.com/photo-1765718747826-0eae5a4387fb?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    title: "Production House",
-    desc: "Full-service production support for premium visual storytelling.",
-    image:
-      "https://images.unsplash.com/photo-1654588832315-0a34f9267b1c?auto=format&fit=crop&w=1400&q=80",
-  },
+  title: "Production House",
+  desc: "Full-service production support for premium visual storytelling.",
+  image:
+    "https://images.unsplash.com/photo-1522588797678-eb56ff93feca?auto=format&fit=crop&w=1400&q=80",
+},
 ];
 
 export default function Home() {
@@ -165,7 +165,7 @@ export default function Home() {
     </div>
 
     {/* Mobile: horizontal swipe | Desktop: grid 3 kolom */}
-    <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pb-4 touch-auto sm:-mx-6 sm:gap-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
+    <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pt-4 pb-4 touch-auto sm:-mx-6 sm:gap-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pt-0 md:pb-0">
       {services.map((service) => (
         <div
           key={service.title}
