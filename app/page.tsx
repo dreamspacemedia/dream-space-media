@@ -210,71 +210,75 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 pb-32">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10">
-          <div className="relative rounded-[40px] overflow-hidden min-h-[420px] border border-white/10">
-            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop')] bg-cover bg-center opacity-70" />
-            <div className="absolute inset-0 bg-black/40" />
+      
+<section className="w-full overflow-x-clip px-4 pb-20 sm:px-6 sm:pb-32">
+  <div className="mx-auto grid w-full min-w-0 max-w-7xl grid-cols-1 gap-6 sm:gap-10 lg:grid-cols-2">
+    {/* Office */}
+    <div className="relative min-w-0 min-h-[380px] overflow-hidden rounded-[28px] border border-white/10 sm:min-h-[420px] sm:rounded-[40px]">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop')] bg-cover bg-center opacity-70" />
+      <div className="absolute inset-0 bg-black/40" />
 
-            <div className="relative z-10 p-10 h-full flex flex-col justify-end">
-              <p className="uppercase tracking-[0.3em] text-neutral-300 mb-4">
-                Office
-              </p>
+      <div className="relative z-10 flex h-full min-w-0 flex-col justify-end p-6 sm:p-10">
+        <p className="mb-4 uppercase tracking-[0.3em] text-neutral-300">
+          Office
+        </p>
 
-              <h3 className="text-5xl font-black mb-6">
-                Jakarta
-              </h3>
+        <h3 className="mb-6 text-4xl font-black sm:text-5xl">
+          Jakarta
+        </h3>
 
-              <p className="text-neutral-200 text-lg leading-relaxed">
-                MR SANYES OFFICE
-                Mall Taman Palem Lantai P8
-                RT.13/RW.10, Kelurahan Cengkareng Timur, 
-                Kecamatan Cengkareng, Kota Jakarta Barat
-              </p>
-            </div>
-          </div>
+        <p className="max-w-full break-words text-base leading-relaxed text-neutral-200 [overflow-wrap:anywhere] sm:text-lg">
+          MR SANYES OFFICE{" "}
+          Mall Taman Palem Lantai P8{" "}
+          RT.13/RW.10, Kelurahan Cengkareng Timur,{" "}
+          Kecamatan Cengkareng, Kota Jakarta Barat
+        </p>
+      </div>
+    </div>
 
-          <div className="rounded-[40px] border border-white/10 bg-white/[0.06] backdrop-blur-2xl p-12">
-            <p className="uppercase tracking-[0.3em] text-neutral-400 mb-5">
-              Contact
-            </p>
+    {/* Contact */}
+    <div className="w-full min-w-0 rounded-[28px] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-2xl sm:rounded-[40px] sm:p-8 lg:p-10">
+      <p className="mb-5 uppercase tracking-[0.3em] text-neutral-400">
+        Contact
+      </p>
 
-            <h3 className="text-5xl font-black leading-tight mb-10">
-              Let’s Create
-              <br />
-              Something Extraordinary
-            </h3>
+      <h3 className="mb-8 break-words text-4xl font-black leading-tight sm:mb-10 sm:text-5xl">
+        Let’s Create
+        <br />
+        Something Extraordinary
+      </h3>
 
-            <div className="space-y-5 text-lg text-neutral-300">
-              <p>+62 8131 8034 35</p>
-              <p>dreamspacemedia08@gmail.com</p>
-              <p></p>
-            </div>
+      <div className="min-w-0 space-y-5 text-base text-neutral-300 sm:text-lg">
+        <p className="break-words [overflow-wrap:anywhere]">
+          +62 8131 8034 35
+        </p>
+        <p className="break-all">
+          dreamspacemedia08@gmail.com
+        </p>
+      </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-10">
-  <a
-    href="https://wa.me/628131803435"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
-  >
-    Contact via WhatsApp
-  </a>
+      <div className="mt-8 flex min-w-0 flex-col gap-4 sm:mt-10 sm:flex-row sm:flex-wrap">
+        <a
+          href="https://wa.me/628131803435"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-w-0 w-full items-center justify-center rounded-full border border-white/20 bg-white/5 px-5 py-4 text-center font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto sm:px-6"
+        >
+          Contact via WhatsApp
+        </a>
 
-  <a
-    href="https://glints.com/id/companies/dream-space-media/8f105743-fdbb-4704-81d5-bb34a83db4c2"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white font-semibold hover:bg-white hover:text-black transition-all duration-300"
-  >
-    Careers 
-  </a>
-
-</div>
-
-          </div>
-        </div>
-      </section>
+        <a
+          href="https://glints.com/id/companies/dream-space-media/8f105743-fdbb-4704-81d5-bb34a83db4c2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-w-0 w-full items-center justify-center rounded-full border border-white/20 bg-white/5 px-5 py-4 text-center font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black sm:w-auto sm:px-6"
+        >
+          Careers
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
