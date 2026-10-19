@@ -75,10 +75,13 @@ export default function Home() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="mb-6 text-[clamp(0.875rem,4.4vw,3.75rem)] font-black leading-none tracking-[-0.04em] sm:mb-8 sm:text-6xl sm:leading-[0.9] md:text-8xl">
-  {/* Mobile: satu baris */}
-  <span className="block whitespace-nowrap sm:hidden">
-    Cinematic Brand Experiences
+            <h1 className="mb-6 font-black leading-[0.98] tracking-[-0.04em] sm:mb-8 sm:text-6xl sm:leading-[0.9] md:text-8xl">
+  {/* Mobile: dua baris */}
+  <span className="block text-[clamp(1.75rem,8.2vw,3.75rem)] sm:hidden">
+    Cinematic Brand
+  </span>
+  <span className="block text-[clamp(1.75rem,8.2vw,3.75rem)] sm:hidden">
+    Experiences
   </span>
 
   {/* Desktop: tetap tiga baris */}
@@ -200,10 +203,13 @@ export default function Home() {
             Brand Partners
           </p>
 
-          <h2 className="text-[clamp(0.875rem,4.4vw,3.75rem)] font-black leading-none tracking-[-0.04em] sm:text-5xl sm:leading-tight md:text-7xl">
-  {/* Mobile: satu baris */}
-  <span className="block whitespace-nowrap sm:hidden">
-    Trusted By Leading Brands
+          <h2 className="font-black leading-[1.05] tracking-[-0.04em] sm:text-5xl sm:leading-tight md:text-7xl">
+  {/* Mobile: dua baris dengan ukuran lebih besar */}
+  <span className="block text-4xl sm:hidden">
+    Trusted By
+  </span>
+  <span className="block text-4xl sm:hidden">
+    Leading Brands
   </span>
 
   {/* Desktop: tetap dua baris */}
