@@ -21,19 +21,19 @@ const services = [
     title: "Commercial Ads",
     desc: "Luxury cinematic commercial production for modern brands.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Social Media Campaigns",
     desc: "Creative social-first campaigns engineered for digital impact.",
     image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1765718747826-0eae5a4387fb?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Production House",
     desc: "Full-service production support for premium visual storytelling.",
     image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1654588832315-0a34f9267b1c?auto=format&fit=crop&w=1400&q=80",
   },
 ];
 
@@ -142,59 +142,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section
-        id="services"
-        className="relative px-5 py-16 sm:px-6 sm:py-32"
-      >
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10 sm:mb-20">
-            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-neutral-500 sm:mb-5 sm:tracking-[0.35em]">
-              Services
-            </p>
+      
+{/* Services Section */}
+<section
+  id="services"
+  className="relative px-5 py-16 sm:px-6 sm:py-32"
+>
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-10 sm:mb-20">
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-neutral-500 sm:mb-5 sm:tracking-[0.35em]">
+        Services
+      </p>
 
-            <h2 className="text-3xl font-black tracking-[-0.04em] sm:text-5xl md:text-7xl">
-              What We Create
-            </h2>
+      <h2 className="text-3xl font-black tracking-[-0.04em] sm:text-5xl md:text-7xl">
+        What We Create
+      </h2>
+
+      {/* Petunjuk geser khusus mobile */}
+      <p className="mt-4 text-sm text-neutral-400 md:hidden">
+        Swipe to explore services →
+      </p>
+    </div>
+
+    {/* Mobile: horizontal swipe | Desktop: grid 3 kolom */}
+    <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pb-4 touch-pan-x sm:-mx-6 sm:gap-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
+      {services.map((service) => (
+        <div
+          key={service.title}
+          className="group relative min-h-[380px] w-[82vw] max-w-[360px] shrink-0 snap-start overflow-hidden rounded-[28px] border border-white/10 transition duration-700 hover:-translate-y-3 sm:min-h-[520px] sm:w-[360px] sm:rounded-[36px] md:w-auto md:max-w-none md:shrink md:snap-none"
+        >
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 scale-100 bg-cover bg-center transition duration-[1800ms] group-hover:scale-110"
+            style={{
+              backgroundImage: `url(${service.image})`,
+            }}
+          />
+
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
+
+          <div className="absolute inset-0 bg-white/[0.03] backdrop-blur-[2px]" />
+
+          {/* Icon */}
+          <div className="absolute left-6 top-6 flex h-16 w-16 items-center justify-center rounded-3xl border border-white/15 bg-white/10 text-2xl backdrop-blur-xl">
+            ✦
           </div>
 
-          <div className="grid gap-5 sm:gap-8 md:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="group relative min-h-[380px] overflow-hidden rounded-[28px] border border-white/10 transition duration-700 hover:-translate-y-3 sm:min-h-[520px] sm:rounded-[36px]"
-              >
-                <div
-                  className="absolute inset-0 scale-100 bg-cover bg-center transition duration-[1800ms] group-hover:scale-110"
-                  style={{ backgroundImage: `url(${service.image})` }}
-                />
+          {/* Service Content */}
+          <div className="relative z-10 flex h-full flex-col justify-end p-6 sm:p-10">
+            <div className="translate-y-2 transition duration-700 sm:translate-y-6 sm:group-hover:translate-y-0">
+              <h3 className="mb-4 text-2xl font-black tracking-[-0.03em] sm:mb-6 sm:text-4xl">
+                {service.title}
+              </h3>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
-
-                <div className="absolute inset-0 bg-white/[0.03] backdrop-blur-[2px]" />
-
-                <div className="absolute left-6 top-6 flex h-16 w-16 items-center justify-center rounded-3xl border border-white/15 bg-white/10 text-2xl backdrop-blur-xl">
-                  ✦
-                </div>
-
-                <div className="relative z-10 flex h-full flex-col justify-end p-6 sm:p-10">
-                  <div className="translate-y-6 transition duration-700 group-hover:translate-y-0">
-                    <h3 className="mb-4 text-2xl font-black tracking-[-0.03em] sm:mb-6 sm:text-4xl">
-                      {service.title}
-                    </h3>
-
-                    <p className="text-base leading-relaxed text-neutral-200 opacity-90 transition group-hover:opacity-100 sm:text-lg">
-                      {service.desc}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="absolute inset-0 rounded-[36px] ring-1 ring-white/10 transition duration-700 group-hover:ring-white/20" />
-              </div>
-            ))}
+              <p className="text-base leading-relaxed text-neutral-200 opacity-90 transition group-hover:opacity-100 sm:text-lg">
+                {service.desc}
+              </p>
+            </div>
           </div>
+
+          {/* Border Effect */}
+          <div className="pointer-events-none absolute inset-0 rounded-[28px] ring-1 ring-white/10 transition duration-700 group-hover:ring-white/20 sm:rounded-[36px]" />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Brand Partners Section */}
       <section className="overflow-hidden py-16 sm:py-32">
