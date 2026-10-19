@@ -75,14 +75,21 @@ export default function Home() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="mb-6 text-4xl font-black leading-[0.98] tracking-[-0.04em] sm:mb-8 sm:text-6xl sm:leading-[0.9] md:text-8xl">
-              Cinematic
-              <br />
-              Brand
-              <br />
-              Experiences
-            </h1>
+            <h1 className="mb-6 text-[clamp(0.875rem,4.4vw,3.75rem)] font-black leading-none tracking-[-0.04em] sm:mb-8 sm:text-6xl sm:leading-[0.9] md:text-8xl">
+  {/* Mobile: satu baris */}
+  <span className="block whitespace-nowrap sm:hidden">
+    Cinematic Brand Experiences
+  </span>
 
+  {/* Desktop: tetap tiga baris */}
+  <span className="hidden sm:block">
+    Cinematic
+    <br />
+    Brand
+    <br />
+    Experiences
+  </span>
+</h1>
             <p className="mb-8 max-w-2xl text-base leading-relaxed text-neutral-300 sm:mb-12 sm:text-lg md:text-xl">
               Premium production house &amp; creative agency crafting cinematic
               visuals, luxury advertising campaigns, and modern digital
@@ -193,11 +200,19 @@ export default function Home() {
             Brand Partners
           </p>
 
-          <h2 className="text-3xl font-black tracking-[-0.04em] sm:text-5xl md:text-7xl">
-            Trusted By
-            <br />
-            Leading Brands
-          </h2>
+          <h2 className="text-[clamp(0.875rem,4.4vw,3.75rem)] font-black leading-none tracking-[-0.04em] sm:text-5xl sm:leading-tight md:text-7xl">
+  {/* Mobile: satu baris */}
+  <span className="block whitespace-nowrap sm:hidden">
+    Trusted By Leading Brands
+  </span>
+
+  {/* Desktop: tetap dua baris */}
+  <span className="hidden sm:block">
+    Trusted By
+    <br />
+    Leading Brands
+  </span>
+</h2>
         </div>
 
         <div className="cinematic-marquee">
