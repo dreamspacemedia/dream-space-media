@@ -165,7 +165,7 @@ export default function Home() {
     </div>
 
     {/* Mobile: horizontal swipe | Desktop: grid 3 kolom */}
-    <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pb-4 touch-pan-x sm:-mx-6 sm:gap-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
+    <div className="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain px-5 pb-4 touch-auto sm:-mx-6 sm:gap-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
       {services.map((service) => (
         <div
           key={service.title}
